@@ -15,30 +15,22 @@ Takes your graph and data images, extracts the data, and prints it as a professi
 ### Option 1: Automatic (Uses AI to extract data)
 
 1. Put expected graph image in `references/graph/` folder
+
 2. Put value images in `references/values/` folder (max 5 images)
-3. Run parser:
-   ```
-   python references/agent/gemini-parser.py
-   ```
-4. Run plotter:
-   ```
-   python plotter.py
-   ```
-5. Open `output.pdf`
 
-### Option 2: Manual (Edit config.json)
+3. Take all the images into any assistant like Claude or Gemini and copy paste prompt.md
 
-1. Edit `config.json`:
+4. `config.json` will be edited to:
    - Set `graphs` = number of curves
    - Set `limits` = axis ranges (xlim_start, xlim_end, ylim_start, ylim_end)
    - Set `scale` = units per cm (for grid squares)
    - Add your data points in `x-val-1`, `y-val-1`, `x-val-2`, `y-val-2`, etc.
 
-2. Run plotter:
+5. Run plotter:
    ```
    python plotter.py
    ```
-3. Open `output.pdf`
+6. Open `output.pdf`
 
 ## File Structure
 
