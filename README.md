@@ -12,8 +12,6 @@ Takes your graph and data images, extracts the data, and prints it as a professi
 
 ## How to Use
 
-### Option 1: Automatic (Uses AI to extract data)
-
 1. Put expected graph image in `references/graph/` folder
 
 2. Put value images in `references/values/` folder (max 5 images)
